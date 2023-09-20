@@ -1,6 +1,6 @@
 # Microservice App
 
-![images](images/Microservice.jpg)
+![image](images/Microservice.jpg)
 
 - discovery-service || register-service
 
@@ -30,7 +30,7 @@
 
 - Bir cok kucuk servisi yonetmek zor olabilir
 
-![images-1](./images/Screenshot_20230920_074420_Samsung%20Notes.jpg)
+![image-1](./images/Screenshot_20230920_074420_Samsung%20Notes.jpg)
 
 ---
 
@@ -160,7 +160,7 @@ public class DiscoveryServiceApplication {
 </dependency>
 ```
 
-2. 
+2.
 
 ```yml
 server:
@@ -179,19 +179,17 @@ eureka:
       defaultZone: http://localhost:8912/eureka
   instance:
     prefer-ip-address: true
-
 #logging:
 #  level:
 #    org.springframework.cloud.gateway: DEBUG
 ```
 
-
-3. 
+3.
 
 ```md
 config
-    |
-    ->GatewayConfig.java
+|
+->GatewayConfig.java
 ```
 
 ```java
@@ -227,8 +225,7 @@ public class GatewayConfig {
 
 ```
 
-
-4. 
+4.
 
 ```java
 @SpringBootApplication
@@ -241,3 +238,6 @@ public class ApiGatewayApplication {
 
 }
 ```
+
+![image-2](/images/Screenshot%202023-09-20%20083701.png)
+![image-3](/images/Screenshot%202023-09-20%20083647.png)
