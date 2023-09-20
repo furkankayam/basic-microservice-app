@@ -1,0 +1,16 @@
+server:
+  port: 8912
+
+spring:
+  application:
+    name: discovery-service
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      #Nerede calisacak
+      #http://localhost:8912 calisiyor
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

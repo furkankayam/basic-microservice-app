@@ -1,0 +1,20 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: api-gateway
+
+# Eureka Config
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8912/eureka
+  instance:
+    prefer-ip-address: true
+
+#logging:
+#  level:
+#    org.springframework.cloud.gateway: DEBUG
